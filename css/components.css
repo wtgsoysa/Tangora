@@ -10,6 +10,9 @@
   --colorBackground: #F3F3F3;
 }
 
+/* ------------------------------------------------------ */
+/* Custom Button Styles */
+/* ------------------------------------------------------ */
 
 .custom-btn {
   background-color: var(--colorDarkBlue) !important;
@@ -28,7 +31,9 @@
 
 
 
-/* ----------------- */
+/* ------------------------------------------------------ */
+/* Nav Item Hover Effects */
+/* ------------------------------------------------------ */
 .hbtn {
   position: relative;
   box-sizing: border-box;
@@ -43,11 +48,6 @@
   white-space: nowrap;
   z-index: 0;
 } 
-
-
-/* .hbtn i {
-  padding-right: 8px;
-}  */
 
 
 .hb-fill-middle2::before {
@@ -100,3 +100,48 @@
 .hb-fill-middle2:hover::after {
   width: 50%;
 } 
+
+
+/* ------------------------------------------------------ */
+/* Custom Margins */
+/* ------------------------------------------------------ */
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mt-150 {
+  margin-top: 150px !important;
+}
+
+.mt-200{
+  margin-top: 200px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------ */
+/* Ignore this (.htaccess code for hide extention) */
+/* ------------------------------------------------------ */
+
+/* RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L] */
