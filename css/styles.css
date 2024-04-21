@@ -69,23 +69,56 @@ body::-webkit-scrollbar {
 }
 
 
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+/* Enquiries Page */
+/* ----------------------------------- */
+
+.enq-miniheading {
+  color: var(--colorDarkBlue);
+  font-size: 18px;
+  font-weight: 700 !important;
+}
+
+
 /* ----------------------------------- */
 /* Footer */
 /* ----------------------------------- */
-.footer-dec{
+.footer-dec {
   color: var(--colorDarkBlue);
-font-family: var(--mainfont);
-font-size: 16px;
+  font-family: var(--mainfont);
+  font-size: 16px;
 }
 
-.footer-links li a{
+.footer-links li a {
   text-decoration: none;
   color: var(--colorDarkBlue);
   border-bottom: 0px solid var(--colorDarkBlue);
 }
 
-.contact-list li{
+.contact-list li {
   list-style: none;
   color: var(--colorDarkBlue);
   font-size: 16px;
+}
+
+.enq-herotitle {
+  color: var(--colorDarkBlue);
+  font-size: 60px;
+  font-weight: 700 !important;
+}
+
+.linkstext h3 {
+  color: var(--colorDarkBlue);
+}
+
+.contact-sec h3 {
+  color: var(--colorDarkBlue);
 }

@@ -11,6 +11,7 @@
     <!-- External CSS File -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/enq.css">
 
     <!-- Google Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +21,18 @@
     <!-- AOS CSS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- AOS CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Enquiries | Tangora</title>
 </head>
 
 <body>
+
+    <!-- Nav Bar Start -->
     <div class="container">
         <nav class="navbar navbar-expand-lg mt-3">
             <div class="container-fluid">
@@ -49,7 +58,8 @@
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4 active" href="/pages/enquiries.html">Enquiries</a>
+                            <a class="nav-link hbtn hb-fill-middle2 px-4 active"
+                                href="/pages/enquiries.html">Enquiries</a>
                         </li>
 
                         <li class="nav-item mx-3">
@@ -65,6 +75,176 @@
         </nav>
 
     </div>
+    <!-- Nav Bar End -->
+
+    <!-- Hero Section Start -->
+    <section class="enq-hero mt-150 ">
+        <div class="container">
+            <div class="enq-herotext text-center">
+                <p class="enq-miniheading">
+                    Our Cleaning Process
+                </p>
+                <h1 class="enq-herotitle">
+                    Cleansing Inquiries <br> Reach Out to Us
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Start -->
+
+    <!-- Enq Input Sec Start -->
+    <section class="enq-inpu mt-150">
+        <div class="container">
+            <div class="content">
+
+                <div class="container">
+                    <div class="row align-items-stretch no-gutters contact-wrap">
+                        <div class="col-md-12">
+                            <div class="form h-100">
+                                <h3 class="enq-inputtitle">Send Us Your Queries</h3>
+                                <form class="mb-5" method="post" id="contactForm" name="contactForm">
+
+                                    <div class="row">
+
+                                        <!-- Name -->
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label for="" class="col-form-label">Name *</label>
+                                            <input type="text" class="form-control" name="name" id="name"
+                                                placeholder="Your name">
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label for="" class="col-form-label">Email *</label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="Your email">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <!-- Number -->
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label for="" class="col-form-label">Phone Number *</label>
+                                            <input type="number" class="form-control" name="number" id="number"
+                                                placeholder="Your phone number">
+                                        </div>
+
+                                        <!-- Location -->
+                                        <div class="col-md-6 form-group mb-3">
+                                            <label for="" class="col-form-label">Location *</label>
+                                            <input type="text" class="form-control" name="location" id="location"
+                                                placeholder="Your location">
+                                        </div>
+                                    </div>
+
+                                    <!-- Time to contact -->
+                                    <div class="row">
+                                        <div class="col-md-12 form-group mb-3">
+                                            <label for="" class="col-form-label">Best Tile to Contact You ? *</label>
+                                            <input type="text" class="form-control" name="contact-time"
+                                                id="contact-time" placeholder="Best Time to contact">
+                                        </div>
+                                    </div>
+
+                                    <!-- services list -->
+                                    <div class="row">
+                                        <div class="col-md-12 form-group mb-3">
+                                            <label for="service" class="col-form-label">Service Type *</label>
+                                            <br>
+                                            <select class="custom-select col-md-12" id="service" name="service">
+                                                <option selected>Choose...</option>
+                                                <option value="Residential Cleaning">Residential Cleaning</option>
+                                                <option value="Commercial Cleaning">Commercial Cleaning</option>
+                                                <option value="Carpet Cleaning">Carpet Cleaning</option>
+                                                <option value="Window Cleaning">Window Cleaning</option>
+                                                <option value="Upholstery Cleaning">Upholstery Cleaning</option>
+                                                <option value="Move In/Out Cleaning">Move In/Out Cleaning</option>
+                                                <option value="Post Construction Cleaning">Post Construction Cleaning
+                                                </option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12 form-group mb-3">
+                                                <label for="message" class="col-form-label col-md-12">Message *</label>
+                                                <textarea class="form-control" name="message" id="message" cols="30"
+                                                    rows="5" placeholder="Write your message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <input type="submit" value="Send Message"
+                                                    class="btn custom-btn rounded-0 py-2 px-4">
+                                                <span class="submitting"></span>
+                                            </div>
+                                        </div>
+                                </form>
+
+                                <div id="form-message-warning mt-4"></div>
+                                <div id="form-message-success">
+                                    Your message was sent, thank you!
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Enq Input Sec End -->
+
+
+    <!-- Footer Section Start -->
+    <section class="mt-100 mb-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Text Content -->
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="text-content">
+                        <!-- footer logo -->
+                        <img src="/assets/images/logo.svg" alt="logo">
+
+                        <!-- footer description -->
+                        <p class="footer-dec mt-4">
+                            At Tangora, we're more than just a cleaning company we're your dedicated partners in
+                            maintaining a clean and healthy environment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="linkstext">
+                        <h3>Useful Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Enquiries</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="contact-sec">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-list">
+                            <li><i class="ri-mail-line"></i> admin@dizzpy.com</li>
+                            <li><i class="ri-phone-line"></i> +91 1234567890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section End -->
 
 
 
