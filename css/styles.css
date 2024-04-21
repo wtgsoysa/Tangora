@@ -1,0 +1,124 @@
+/*! Variables start */
+:root {
+  /* Font Styles */
+  --mainfont: "Lato", sans-serif;
+
+  /* Color Variables */
+  --colorDarkBlue: #0A1540;
+  --colorLightBlue: #68FDD7;
+  --colorWhite: #FFFFFF;
+  --colorBackground: #F3F3F3;
+}
+
+body {
+  font-family: var(--mainfont) !important;
+  cursor: default;
+  height: 100vh;
+  background-color: var(--colorBackground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reset Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Text Selection Styles */
+::-moz-selection {
+  color: var(--colorDarkBlue);
+  background: var(--colorLightBlue);
+}
+
+/* Page selection colos  */
+::selection {
+  color: var(--colorDarkBlue);
+  background: var(--colorLightBlue);
+}
+
+
+/* styls start */
+.nav-logo {
+  width: 105px;
+  height: 40px;
+}
+
+.navbar {
+  background-color: var(--colorBackground);
+  padding: 0.5rem 0;
+}
+
+/* nav links */
+.nav-link {
+  color: var(--colorDarkBlue) !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.active {
+  /* add border only bottom */
+  border-bottom: 2px solid var(--colorLightBlue);
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+/* Enquiries Page */
+/* ----------------------------------- */
+
+.enq-miniheading {
+  color: var(--colorDarkBlue);
+  font-size: 18px;
+  font-weight: 700 !important;
+}
+
+
+/* ----------------------------------- */
+/* Footer */
+/* ----------------------------------- */
+.footer-dec {
+  color: var(--colorDarkBlue);
+  font-family: var(--mainfont);
+  font-size: 16px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: var(--colorDarkBlue);
+  border-bottom: 0px solid var(--colorDarkBlue);
+}
+
+.contact-list li {
+  list-style: none;
+  color: var(--colorDarkBlue);
+  font-size: 16px;
+}
+
+.enq-herotitle {
+  color: var(--colorDarkBlue);
+  font-size: 60px;
+  font-weight: 700 !important;
+}
+
+.linkstext h3 {
+  color: var(--colorDarkBlue);
+}
+
+.contact-sec h3 {
+  color: var(--colorDarkBlue);
+}
