@@ -1,0 +1,45 @@
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Lato", sans-serif;
+  
+    /* Color Variables */
+    --colorDarkBlue: #0A1540;
+    --colorLightBlue: #68FDD7;
+    --colorWhite: #FFFFFF;
+    --colorBackground: #F3F3F3;
+  }
+  
+  body {
+    font-family: var(--mainfont) !important;
+    cursor: default;
+    height: 100vh;
+    background-color: var(--colorBackground);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Reset Styles */
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  /* Text Selection Styles */
+  ::-moz-selection {
+    color: var(--colorDarkBlue);
+    background: var(--colorLightBlue);
+  }
+  
+  /* Page selection colos  */
+  ::selection {
+    color: var(--colorDarkBlue);
+    background: var(--colorLightBlue);
+  }
