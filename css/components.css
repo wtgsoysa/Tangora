@@ -1,0 +1,102 @@
+/*! Variables start */
+:root {
+  /* Font Styles */
+  --mainfont: "Lato", sans-serif;
+
+  /* Color Variables */
+  --colorDarkBlue: #0A1540;
+  --colorLightBlue: #68FDD7;
+  --colorWhite: #FFFFFF;
+  --colorBackground: #F3F3F3;
+}
+
+
+.custom-btn {
+  background-color: var(--colorDarkBlue) !important;
+  color: var(--colorWhite) !important;
+  font-size: 18px !important;
+  border: none !important;
+  padding: 12px 30px !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+}
+
+.custom-btn:hover {
+  background-color: var(--colorLightBlue) !important;
+  color: var(--colorDarkBlue) !important;
+}
+
+
+
+/* ----------------- */
+.hbtn {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  /* padding: 2px; */
+  /* margin: 0px 3px 6px; */
+  text-align: center;
+  /* border: 2px solid rgb(255, 255, 255); */
+  text-decoration: none;
+  /* color: rgb(187, 30, 30); */
+  white-space: nowrap;
+  z-index: 0;
+} 
+
+
+/* .hbtn i {
+  padding-right: 8px;
+}  */
+
+
+.hb-fill-middle2::before {
+  position: absolute;
+  content: "";
+  background: var(--colorLightBlue);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px 0px auto auto;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+} 
+
+
+.hb-fill-middle2:hover::before {
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+} 
+
+
+.hb-fill-middle2 {
+  background: transparent;
+  color: var(--colorLightBlue);
+  transition: color 0.3s ease 0s, background 0s ease 0s;
+} 
+
+
+.hb-fill-middle2:hover {
+  color: rgb(0, 0, 0);
+  background: var(--colorLightBlue);
+  transition: color 0.3s ease 0s, background 0s ease 0.3s;
+} 
+
+
+.hb-fill-middle2::after {
+  position: absolute;
+  content: "";
+  background: var(--colorLightBlue);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px auto auto 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+} 
+
+
+.hb-fill-middle2:hover::after {
+  width: 50%;
+} 
