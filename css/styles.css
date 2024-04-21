@@ -67,3 +67,25 @@ body::-webkit-scrollbar {
   /* add border only bottom */
   border-bottom: 2px solid var(--colorLightBlue);
 }
+
+
+/* ----------------------------------- */
+/* Footer */
+/* ----------------------------------- */
+.footer-dec{
+  color: var(--colorDarkBlue);
+font-family: var(--mainfont);
+font-size: 16px;
+}
+
+.footer-links li a{
+  text-decoration: none;
+  color: var(--colorDarkBlue);
+  border-bottom: 0px solid var(--colorDarkBlue);
+}
+
+.contact-list li{
+  list-style: none;
+  color: var(--colorDarkBlue);
+  font-size: 16px;
+}
