@@ -87,6 +87,50 @@ body::-webkit-scrollbar {
   font-weight: 700 !important;
 }
 
+.aboutUs-Title{
+  color: var(--colorDarkBlue);
+  font-size: 21px;
+  font-weight: 700 !important;
+
+}
+
+.aboutUs-Title1{
+  color: var(--colorDarkBlue);
+  font-size: 18px;
+  font-weight: 600 !important;
+  margin-top: 10px;
+
+}
+
+.aboutUs-Title2{
+  color: var(--colorDarkBlue);
+  font-size: 28px;
+  font-weight: 600 !important;
+ 
+
+}
+
+.aboutUs-herotitle{
+  color: var(--colorDarkBlue);
+  font-size: 24px;
+  font-weight: 700 !important;
+
+}
+
+.aboutUs-Descreption{
+  color: var(--colorDarkBlue);
+  font-size: 17px;
+  font-weight: 500 !important;
+
+}
+
+.aboutUs-Descreption1{
+  color: var(--colorDarkBlue);
+  font-size: 16px;
+  font-weight: 500 !important;
+
+}
+
 
 /* ----------------------------------- */
 /* Footer */

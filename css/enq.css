@@ -152,9 +152,11 @@ label.error {
     color: var(--colorDarkBlue) !important;
     font-size: 35px;
     font-weight: 700 !important;
+    
 }
 
 
 .enq-inpu {
     background-color: #fff;
+    
 }
