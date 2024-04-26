@@ -11,11 +11,18 @@
     <!-- External CSS File -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/const.css">
 
     <!-- Google Font Import -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
 
     <!-- Remix Icon CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
@@ -29,79 +36,540 @@
 <body>
 
     <!-- Nav Bar Start -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg mt-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo.svg" alt="logo" class="nav-logo">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 active px-4" href="./index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4" href="./pages/services.html">Services</a>
-                        </li>
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4" href="./pages/enquiries.html">Enquiries</a>
-                        </li>
-
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4" href="./pages/about-us.html">About Us</a>
-                        </li>
-
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn custom-btn" type="submit">Contact Us</button>
-                    </form>
+    <div class="container-fluid navbg py-2 mt-2 sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg mt-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/logo.svg" alt="logo" class="nav-logo">
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+    
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 active px-4" href="./index.html">Home</a>
+                            </li>
+    
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 px-4" href="./pages/servivces.html">Services</a>
+                            </li>
+    
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 px-4" href="./pages/enquiries.html">Enquiries</a>
+                            </li>
+    
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 px-4" href="./pages/about-us.html">About Us</a>
+                            </li>
+    
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn custom-btn d-none d-md-block" type="submit">Contact Us</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+    
+        </div>
     </div>
     <!-- Nav Bar End -->
+
+    <!-- Float Button Start -->
+    <a href="#" class="float floating">hellow</a>
+    <!-- Float Button End -->
 
     <!-- Hero Section Start -->
     <section class="hero-section mt-50">
         <div class="container">
-            <h1>hello world!</h1>
+            <div class="hero-heading text-center">
+
+                <!-- Mini Title -->
+                <p data-aos-delay="100" data-aos="fade-up" data-aos-duration="1500" class="top-text">
+                    <span class="custom-bg-outline">
+                        Welcome to Tangora
+                    </span>
+                </p>
+
+                <!-- Main Title -->
+                <h1 data-aos-delay="200" data-aos="fade-up"  data-aos-duration="1500" class="main-heading text-center mx-auto mt-2">
+                    Refresh Your Space with Our <span>Expert</span> Cleaning Services
+                </h1>
+
+                <!-- Video -->
+                <div data-aos-delay="300" data-aos="fade-up" data-aos-duration="1500" class="video-container mt-4">
+                    <!-- <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" autoplay loop muted class="hero-video"></video> -->
+                    <center>
+                        <img src="./assets/images/videoimg.png" alt=""
+                            class="herovid img-fluid d-none d-md-block text-center">
+                    </center>
+                </div>
+
+                <!-- Hero Description -->
+                <p data-aos-delay="400" data-aos="fade-up" data-aos-duration="1500" class="hero-descirption text-center mx-auto mt-4">
+                    Welcome to Tangora, where cleanliness meets excellence. Our expert cleaning services are tailored to rejuvenate your space, whether it's daily upkeep, periodic deep cleans, or specialized solutions. Trust Tangora to go above and beyond, ensuring your environment is not just clean, but refreshed and revitalized.
+                </p>
+
+                <!-- Get Enquiries Button -->
+                <button data-aos-delay="500" data-aos="fade-up" data-aos-duration="1500" class="btn custom-btn mt-4" type="submit">
+                    Get Enquiries <span class="mr-2 ri-arrow-right-double-fill"></span>
+                </button>
+            </div>
+
+            <!-- Scroll Bottom Icon -->
+            <!-- <div class="scroll-icon text-center mt-4">
+                <i class="ri-scroll-to-bottom-line"></i>
+            </div> -->
         </div>
     </section>
     <!-- Hero Section End -->
 
+    <!-- Why Choose Us Start -->
+    <section class="whyus-section mt-50 section-padding">
+        <div class="container mx-auto">
+
+            <!-- Text Content -->
+            <div class="text-content">
+                <h1 class="whyus-title text-center mx-auto">
+                    Why <span class="text-highlight">Tangora</span> Stands Out Among Cleaning Companies
+                </h1>
+            </div>
+
+            <!-- Card Row -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-5 mt-2">
+
+                    <!-- Card 01 -->
+                    <div data-aos-delay="100" data-aos="fade-up" data-aos-duration="1500" class="col">
+                        <div class=" p-3">
+                            <i class="ri-award-line whyus-icon mt-4"></i>
+                            <div class="card-body">
+                                <h5 class="card-title mt-4">Expertise and Experience</h5>
+                                <p class="card-text mt-3">
+                                    Highlight our team's extensive experience in the cleaning industry, translating into top-notch service and exceptional results.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 02 -->
+                    <div data-aos-delay="250" data-aos="fade-up" data-aos-duration="1500" class="col">
+                        <div class=" p-3">
+                            <i class="ri-shield-check-line whyus-icon mt-4"></i>
+                            <div class="card-body">
+                                <h5 class="card-title mt-4">
+                                    Commitment to Quality
+                                </h5>
+                                <p class="card-text mt-3">
+                                    Communicate our dedication to delivering high-quality cleaning services, backed by testimonials showcasing our track record.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 03 -->
+                    <div data-aos-delay="500" data-aos="fade-up" data-aos-duration="1500" class="col">
+                        <div class=" p-3">
+                            <i class="ri-puzzle-line whyus-icon mt-4"></i>
+                            <div class="card-body">
+                                <h5 class="card-title mt-4">
+                                    Customized Solutions
+                                </h5>
+                                <p class="card-text mt-3">
+                                    Showcase our ability to tailor cleaning services to meet each client's unique needs, ensuring maximum satisfaction.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+    <!-- Why Choose Us End -->
+
+    <!-- Cleaning Process Start -->
+    <section class="process-section section-padding">
+        <div class="container">
+            <div class="text-center">
+
+                <!-- Mini Title -->
+                <p class="top-text">
+                    <span class="custom-bg-outline">
+                        Our Cleaning Process
+                    </span>
+                </p>
+
+                <!-- Main title -->
+                <h1 class="process-title text-center mx-auto mt-3">
+                    Understanding Our <span class="text-highlight">Comprehensive Approach</span> to Cleaning
+                </h1>
+            </div>
+
+            <!-- Card Section -->
+            <div class="card-section">
+                <!-- Card Row -->
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-3 g-5 mt-2">
+
+                        <!-- Card 01 -->
+                        <div data-aos-delay="100" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class=" process-card px-4 py-5 d-flex flex-column align-items-center">
+
+                                <!-- Card Image -->
+                                <div class="process-iconbg mt-4">
+                                    <!-- <i class="ri-eye-line process-card-icon"></i> -->
+                                    <p class="pro-imoji">🔍</p>
+                                </div>
+
+                                <!-- Card Text Content -->
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="process-card-title mt-4">
+                                        Thorough Assessment
+                                    </h5>
+                                    <p class="process-card-text mt-3 text-center px-4">
+                                        Before we begin, our team conducts a thorough assessment of your space to understand its unique cleaning needs. This step ensures that we tailor our approach to deliver the best results for you.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Arrow between Card 01 and Card 02 -->
+                        <!-- <div class="col-12 d-md-none text-center mt-3">
+                            <span class="arrow">&#10140;</span>
+                        </div> -->
+
+                        <!-- Card 02 -->
+                        <div data-aos-delay="250" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class=" process-card px-4 py-5 d-flex flex-column align-items-center">
+
+                                <!-- Card Image -->
+                                <div class="process-iconbg mt-4">
+                                    <!-- <img src="./assets/icons/whyus-01.svg" alt="" class="process-card-icon"> -->
+                                    <p class="pro-imoji">🧽</p>
+                                </div>
+
+                                <!-- Card Text Content -->
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="process-card-title mt-4">
+                                        Detailed Execution
+                                    </h5>
+                                    <p class="process-card-text mt-3 text-center px-4">
+                                        Once the assessment is complete, we meticulously execute our cleaning process. From dusting and vacuuming to sanitizing and polishing, each task is carried out with precision and care to ensure thorough cleanliness.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Arrow between Card 02 and Card 03 -->
+                        <!-- <div class="col-12 d-md-none text-center mt-3">
+                            <span class="arrow">&#10140;</span>
+                        </div> -->
+
+                        <!-- Card 03 -->
+                        <div data-aos-delay="500" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class=" process-card px-4 py-5 d-flex flex-column align-items-center">
+
+                                <!-- Card Image -->
+                                <div class="process-iconbg mt-4">
+                                    <!-- <img src="./assets/icons/whyus-01.svg" alt="" class="process-card-icon"> -->
+                                    <p class="pro-imoji">👍</p>
+                                </div>
+
+                                <!-- Card Text Content -->
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="process-card-title mt-4">
+                                        Quality Assurance
+                                    </h5>
+                                    <p class="process-card-text mt-3 text-center px-4">
+                                        At Tangora, quality is our priority. Throughout the cleaning process, we maintain strict quality standards to ensure that every surface is spotless and every corner is pristine. Your satisfaction is our guarantee.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Cleaning Process End -->
+
+    <!-- Services List Start -->
+    <section class="services-section section-pb">
+        <div class="container text-center">
+            <!-- Mini Title -->
+            <p class="top-text">
+                <span class="custom-bg-outline">
+                    Our Cleaning Services
+                </span>
+            </p>
+
+            <!-- Main title -->
+            <h1 class="process-title text-center mx-auto mt-3">
+                Revitalize Your Space <span class="text-highlight">Comprehensive Cleaning</span> Services
+            </h1>
+
+            <!-- Card Section -->
+            <div class="card-section">
+                <!-- Card Row -->
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-3 g-5 mt-2">
+
+                        <!-- Card 01 -->
+                        <div data-aos-delay="100" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class="services-card px-4 py-4">
+
+                                <!-- Card Image -->
+                                <img src="./assets/images/services-img/serv-01.png" alt="" class="services-img text-start ">
+
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 text-start">
+                                        Interior and Floor Cleaning
+                                    </h5>
+                                    <p class="card-text my-3 text-start">
+                                        Revitalize your space with our thorough cleaning service. From surface wiping to floor mopping, every corner shines brightly.
+                                    </p>
+                                </div>
+
+                                <!-- See More Button -->
+                                <div class="text-start my-3">
+                                    <a href="./pages/daily-cleaning.html">
+                                        <button class="btn outline-buton">
+                                            See More <span class="ri-arrow-right-line"></span>
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 02 -->
+                        <div data-aos-delay="200" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class="services-card px-4 py-4">
+
+                                <!-- Card Image -->
+                                <img src="./assets/images/services-img/serv-02.png" alt="" class="services-img text-start ">
+
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 text-start">
+                                        Vaccum Cleaning
+                                    </h5>
+                                    <p class="card-text my-3 text-start">
+                                        Keep floors debris-free with our professional vacuum service. Our powerful vacuums leave carpets fresh and revitalized.
+                                    </p>
+                                </div>
+
+                                <!-- See More Button -->
+                                <div class="text-start my-3">
+                                    <a href="./pages/daily-cleaning.html">
+                                        <button class="btn outline-buton">
+                                            See More <span class="ri-arrow-right-line"></span>
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 03 -->
+                        <div data-aos-delay="300" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class="services-card px-4 py-4">
+
+                                <!-- Card Image -->
+                                <img src="./assets/images/services-img/serv-03.png" alt="" class="services-img text-start ">
+
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 text-start">
+                                        Window Cleaning
+                                    </h5>
+                                    <p class="card-text my-3 text-start">
+                                        Exceeding expectations, we prioritize satisfaction with reliable service and transparent communication for sparkling windows.
+                                    </p>
+                                </div>
+
+                                <!-- See More Button -->
+                                <div class="text-start my-3">
+                                    <a href="./pages/periodical-leaning.html">
+                                        <button class="btn outline-buton">
+                                            See More <span class="ri-arrow-right-line"></span>
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 04 -->
+                        <div data-aos-delay="400" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class="services-card px-4 py-4">
+
+                                <!-- Card Image -->
+                                <img src="./assets/images/services-img/serv-04.png" alt="" class="services-img text-start ">
+
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 text-start">
+                                        Carpet Cleaning
+                                    </h5>
+                                    <p class="card-text my-3 text-start">
+                                        We prioritize satisfaction, delivering reliable service and transparent communication for fresh, revitalized carpets.
+                                    </p>
+                                </div>
+
+                                <!-- See More Button -->
+                                <div class="text-start my-3">
+                                    <a href="./pages/periodical-leaning.html">
+                                        <button class="btn outline-buton">
+                                            See More <span class="ri-arrow-right-line"></span>
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 05 -->
+                        <div data-aos-delay="500" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class="services-card px-4 py-4">
+
+                                <!-- Card Image -->
+                                <img src="./assets/images/services-img/serv-05.png" alt="" class="services-img text-start ">
+
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 text-start">
+                                        Telephones & Computer Cleaning
+                                    </h5>
+                                    <p class="card-text my-3 text-start">
+                                        Expect hygiene and efficiency with our specialized cleaning. We prioritize satisfaction with reliable, transparent service.
+                                    </p>
+                                </div>
+
+                                <!-- See More Button -->
+                                <div class="text-start my-3">
+                                    <a href="./pages/special-cleaning.html">
+                                        <button class="btn outline-buton">
+                                            See More <span class="ri-arrow-right-line"></span>
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 06 -->
+                        <div data-aos-delay="600" data-aos="fade-up" data-aos-duration="1500" class="col">
+                            <div class="services-card px-4 py-4">
+
+                                <!-- Card Image -->
+                                <img src="./assets/images/services-img/serv-06.png" alt="" class="services-img text-start ">
+
+                                <div class="card-body">
+                                    <h5 class="card-title my-3 text-start">
+                                        Health Care Cleaning
+                                    </h5>
+                                    <p class="card-text my-3 text-start">
+                                        Promote patient well-being with our specialized cleaning protocols meeting industry standards for a sterile, safe environment.
+                                    </p>
+                                </div>
+
+                                <!-- See More Button -->
+                                <div class="text-start my-3">
+                                    <a href="./pages/segment-cleaning.html">
+                                        <button class="btn outline-buton">
+                                            See More <span class="ri-arrow-right-line"></span>
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center mt-5">
+                <button class="btn custom-btn" type="submit">
+                    View All Services <span class="mr-2 ri-arrow-right-double-fill"></span>
+                </button>
+            </div>
+    </section>
+    <!-- Services List End -->
+
+    <!--About Section Start -->
+    <section class="about-section ">
+        <div class="container">
+            <div class="about-bg">
+
+                <div class=" row">
+                    <!-- Text Part -->
+                    <div class="col-md-6">
+                        <div class="text-content">
+                            <h1 class="about-title my-4">
+                                Meet Tangora Your <span class="text-highlight">Trusted Cleaning</span> Partner
+                            </h1>
+
+                            <p class="about-description my-4">
+                                At Tangora, we're more than just a cleaning company we're your dedicated partners in
+                                maintaining a clean and healthy environment. Learn more about our story, values, and
+                                commitment to excellence.
+                            </p>
+
+                            <a href="./pages/about-us.html">
+                                <button class="btn custom-btn my-4" type="submit">
+                                    More Details <span class="mr-2 ri-arrow-right-double-fill"></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image Part -->
+                    <div class="col-md-6">
+                        <div class="text-center mt-4">
+                            <img src="./assets/images/services-img/about-image.png" alt="" class="about-image d-none d-md-block mx-auto">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section End -->
 
     <!-- Footer Section Start -->
-    <section class="mt-100 mb-5">
+    <section class="mt-100 footer-bg">
         <div class="container">
             <div class="row">
 
                 <!-- Text Content -->
-                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <div class="text-content">
                         <!-- footer logo -->
-                        <img src="./assets/images/logo.svg" alt="logo">
+                        <img src="./assets/images/logo.svg" alt="logo" class="img-fluid">
 
                         <!-- footer description -->
                         <p class="footer-dec mt-4">
-                            At Tangora, we're more than just a cleaning company we're your dedicated partners in
-                            maintaining a clean and healthy environment.
+                            At Tangora, we're more than just a cleaning company
+                            we're your dedicated partners in maintaining a clean
+                            and healthy environment.
                         </p>
                     </div>
                 </div>
 
                 <!-- Useful Links -->
-                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <div class="linkstext">
                         <h3>Useful Links</h3>
                         <ul class="footer-links">
@@ -113,20 +581,49 @@
                     </div>
                 </div>
 
-                <!-- Contact Section -->
-                <div class="col-md-4 mb-4 d-flex justify-content-center">
-                    <div class="contact-sec">
-                        <h3>Contact Us</h3>
-                        <ul class="contact-list">
-                            <li><i class="ri-mail-line"></i> admin@dizzpy.com</li>
-                            <li><i class="ri-phone-line"></i> +91 1234567890</li>
+                <!-- Services list -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="linkstext">
+                        <h3>Services List</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Daily Cleaning</a></li>
+                            <li><a href="#">Periodical Cleaning</a></li>
+                            <li><a href="#">Special Cleaning</a></li>
+                            <li><a href="#">Segment Cleaning</a></li>
                         </ul>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-body" href="#">Dizzpy</a>
+        </div>
+
     </section>
     <!-- Footer Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

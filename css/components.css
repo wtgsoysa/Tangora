@@ -1,7 +1,7 @@
 /*! Variables start */
 :root {
   /* Font Styles */
-  --mainfont: "Lato", sans-serif;
+  --mainfont: "Poppins", sans-serif;
 
   /* Color Variables */
   --colorDarkBlue: #0A1540;
@@ -102,29 +102,32 @@
 }
 
 
+
+
+
 /* ------------------------------------------------------ */
-/* Custom Margins */
-/* ------------------------------------------------------ */
 
-.mt-50 {
-  margin-top: 50px !important;
+.outline-buton {
+  background-color: var(--colorWhite) !important;
+  color: var(--colorDarkBlue) !important;
+  font-size: 14px !important;
+  border: 1px solid var(--colorDarkBlue) !important;
+  padding: 8px 30px !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out;
 }
 
-.mt-75 {
-  margin-top: 75px !important;
+.outline-buton:hover {
+  background-color: var(--colorDarkBlue) !important;
+  color: var(--colorWhite) !important;
 }
 
-.mt-100 {
-  margin-top: 100px !important;
+.outline-buton:hover span {
+  margin-left: 5px;
+  transition: 0.2s linear;
 }
 
-.mt-150 {
-  margin-top: 150px !important;
-}
-
-.mt-200 {
-  margin-top: 200px !important;
-}
 
 
 
@@ -136,6 +139,21 @@
 } */
 
 
+
+
+.float{
+	position:fixed;
+  padding: 10px 25px;
+  font-size: 18px;
+  text-decoration: none;
+	bottom:20px;
+	right:20px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  z-index: 50;
+}
 
 
 

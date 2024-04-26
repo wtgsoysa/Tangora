@@ -1,0 +1,69 @@
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Poppins", sans-serif;
+
+    /* Color Variables */
+    --colorDarkBlue: #0A1540;
+    --colorLightBlue: #68FDD7;
+    --colorWhite: #FFFFFF;
+    --colorBackground: #F3F3F3;
+}
+
+
+
+
+.aboutus-image {
+    width: 450px;
+    height: 450px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+
+.aboutus-description{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--colorDarkBlue);
+}
+
+.aboutus-title{
+    font-size: 35px !important;
+    font-weight: 600 !important;
+    color: var(--colorDarkBlue);
+}
+
+.faq-title{
+    font-size: 35px !important;
+    font-weight: 600 !important;
+    color: var(--colorDarkBlue);
+    max-width: 60%;
+}
+
+
+.und-black{
+    border-bottom: 1px solid black !important;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .aboutus-image{
+        width: 250px;
+        height: 250px;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+    }
+
+    .aboutus-title{
+        max-width: 100%;
+    }
+
+}

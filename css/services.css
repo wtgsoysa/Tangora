@@ -1,269 +1,108 @@
-.service-miniheading{
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Poppins", sans-serif;
+
+    /* Color Variables */
+    --colorDarkBlue: #0A1540;
+    --colorLightBlue: #68FDD7;
+    --colorWhite: #FFFFFF;
+    --colorBackground: #F3F3F3;
+}
+
+body {
+    font-family: var(--mainfont) !important;
+    cursor: default;
+    height: 100vh;
+    background-color: var(--colorBackground);
     color: var(--colorDarkBlue);
-    font-size: 18px;
-    font-weight: 200 !important;
 }
 
-.service-herotitle {
-    color: var(--colorDarkBlue);
-    font-size: 60px;
-    font-weight: 700 !important;
+/* .page-service-hero {
+    height: 100vh !important;
+} */
+
+.page-services-list {
+    background-color: var(--colorWhite);
 }
 
-.service-btn{
-  background-color: var(--colorDarkBlue) !important;
-  color: var(--colorWhite) !important;
-  font-size: 18px !important;
-  border: none !important;
-  padding: 12px 30px !important;
-  border-radius: 50px !important;
-  cursor: pointer !important;
-}
-
-.service-btn:hover {
-    background-color: var(--colorLightBlue) !important;
-    color: var(--colorDarkBlue) !important;
-}
-
-.service-section-mini-heading{
-    margin-top: 100px;
-    font-size: 18px;
-    color: var(--colorDarkBlue);
-    font-weight: 200 !important;
-}
-
-.service-section-mini-title{
-    color: var(--colorDarkBlue);
-    font-size: 25px;
-    font-weight: 700 !important;
-
-}
-
-.service-item-card{
-    background-color: #fff;
-    box-shadow: 0px 2px 10px 0px rgba(34, 87, 122, 0.15);
-    border-radius: 14px;
-    /* height: 31.5rem; */
-    transition: .7s;
-    margin-top: 30px;
-    
-    margin-right: 100px;
-    width: 350px;
-
-}
-
-.service-item-card:hover {
-    cursor: pointer;
-    transform: translateY(-10px);
-}
-  
-.service-item-card:hover .D-ShopItemImage{
-    transform: scale(1.04);
-}
-
-.service-item-card-title {
-  color: var(--colorDarkBlue);
-  font-family: var(--mainfont);
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0.45px;
-  color: var(--colorGreenMain);
-
-}
-
-.service-item-card-details {
-  color: var(--colorBlueMain);
-  font-family: var(--mainfont);
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.539px;
-  
-
-}
-  
-/* see more button style start */
-.cta {
-    border: none;
-    background: none;
-}
-
-.cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 12px;
-    padding-right: 15px;
-    text-transform: uppercase;
-}
-
-.cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
-}
-
-.cta:hover svg {
-    transform: translateX(0);
-}
-
-.cta:active svg {
-    transform: scale(0.9);
-}
-
-.hover-underline-animation {
-    position: relative;
-    color: var(--colorBlueMain);
-    padding-bottom: 20px;
-}
-
-.hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color:#68FDD7;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-/* see more button style end */
-
-.service-package-image{
-    border-radius: 10px;
-}
-
-
-/* ---------------- Office Cleaning ----------------------- */
-
-.office-cleaning-carousel{
-    height: 300px;
-    width: 600px;  
-}
-
-.office-service-title{
-    
-    font-size: 22px;
-    color: var(--colorDarkBlue);
+.ps-title {
+    font-size: 35px;
     font-weight: 600 !important;
-}
-
-.office-service-descreption{
-    font-size: 16px;
     color: var(--colorDarkBlue);
-    font-weight: 200 !important;
-
 }
+
+.ps-card-img {
+    height: 350px !important;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.ps-card {
+    background-color: var(--colorWhite);
+    border-radius: 22px;
+}
+
+.ps-card-title {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    color: var(--colorDarkBlue);
+}
+
+.ps-card-text {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    color: var(--colorDarkBlue);
+}
+
+
+/* .daily-service-hero{
+    height: 80vh;
+} */
+.service-image img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-content h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
 
 
 /* Accordion Start By here */
-.office-service-catergory{
+/* .office-service-catergory{
     margin-right: 100px;
-}
+} */
 
-.accordion{
+/* .accordion{
     margin-right: 150px;
     width: 1300px;
+} */
 
-}
-
-.accordion li{
-    list-style: none;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background:white;
-    border-color: aqua;
-    border-bottom-style: solid ;
-}
-
-
-.accordion li label{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.title{
-    color: var(--colorDarkBlue);
-    font-weight: 600px;
-}
-
-label::before{
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 600;
-    
-}
-
-input[type = "radio"]{
+/* Hide checkboxes */
+/* Hide checkboxes */
+/* Hide checkboxes */
+.accordion input[type="checkbox"] {
     display: none;
-} 
-
-.accordion .content{
-    color: var(--colorDarkBlue);
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-
-
 }
 
-.accordion input[type = "radio"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px 10px 20px;
-}
-
-.accordion input[type = "radio"]:checked + label::before{
-    content: '-';
-}
-
-
-/* About Us Page */
-
-.about-image{
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
-
-
-/* AboutUs Accordion Start By here */
-.office-service-catergory{
-    margin-right: 100px;
-}
-
-.accordion1{
-    margin-right: 150px;
-    width: 1300px;
-
-}
-
-.accordion1 li{
+/* Styles for accordion items */
+.accordion li {
     list-style: none;
     width: 100%;
-    margin: 20px;
-    padding: 10px;
+    padding: 15px;
+    margin: 10px 0;
     border-radius: 8px;
     background: white;
+    border-color: aqua;
     border-bottom-style: solid;
-    
 }
 
-
-.accordion1 li label{
+.accordion li label {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -272,39 +111,45 @@ input[type = "radio"]{
     cursor: pointer;
 }
 
-.title{
+.title {
     color: var(--colorDarkBlue);
-    font-weight: 600px;
+    font-size: 20px !important;
+    font-weight: 600;
 }
 
-label::before{
+/* Initially show "+" icon */
+label::before {
     content: '+';
     margin-right: 10px;
     font-size: 24px;
     font-weight: 600;
-    
+    transition: max-height 0.2s ease-out;
 }
 
-input[type = "radio"]{
-    display: none;
-} 
-
-.accordion1 .content{
-    color: var(--colorDarkBlue);
-    padding: 0 10px;
-    line-height: 26px;
+/* Hide content by default and add smooth transition */
+.accordion .content {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 0px 20px;
+    font-size: 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-
-
+    transition: max-height 0.2s ease-out;
 }
 
-.accordion1 input[type = "radio"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px 10px 20px;
-}
-
-.accordion input[type = "radio"]:checked + label::before{
+/* Change icon to "-" when accordion is expanded */
+.accordion input[type="checkbox"]:checked ~ label::before {
     content: '-';
+    transition: max-height 1s ease-out;
 }
+
+/* Show content when checkbox is checked */
+.accordion input[type="checkbox"]:checked ~ .content {
+    max-height: 1000px; /* Adjust to a value larger than your content's height */
+    transition: max-height 0.6s ease-in-out;
+}
+
+
+
+
+

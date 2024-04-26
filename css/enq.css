@@ -1,3 +1,46 @@
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Poppins", sans-serif;
+  
+    /* Color Variables */
+    --colorDarkBlue: #0A1540;
+    --colorLightBlue: #68FDD7;
+    --colorWhite: #FFFFFF;
+    --colorBackground: #F3F3F3;
+  }
+
+
+
+
+
+
+
+
+
+.enq-hero{
+    margin-top: 150px;
+    margin-bottom: 200px;
+
+}
+
+.enq-herotitle{
+    max-width: 60%;
+    font-weight: 600 !important;
+    color: --var(colorDarkBlue);
+}
+
+
+
+@media (max-width: 991.98px) {
+    .enq-herotitle{
+        max-width: 100%;
+    }
+    
+  }
+
+
+
 .content {
     padding: 7rem 0;
 }
@@ -49,7 +92,7 @@
 .contact-wrap .col-form-label {
     font-size: 14px;
     color: #b3b3b3;
-    margin: 0 0 10px 0;
+    /* margin: 0 0 10px 0; */
     display: inline-block;
     padding: 0;
 }
@@ -151,12 +194,11 @@ label.error {
 .enq-inputtitle {
     color: var(--colorDarkBlue) !important;
     font-size: 35px;
-    font-weight: 700 !important;
-    
+    font-weight: 500 !important;
+    margin-bottom: 100px !important;
 }
 
 
 .enq-inpu {
     background-color: #fff;
-    
 }

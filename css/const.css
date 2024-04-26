@@ -1,0 +1,77 @@
+/* ------------------------------------------------------ */
+/* Custom Margins */
+/* ------------------------------------------------------ */
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-75 {
+    margin-top: 75px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.mt-150 {
+    margin-top: 150px !important;
+}
+
+.mt-200 {
+    margin-top: 200px !important;
+}
+
+
+/* ------------------------------------------------------ */
+/* Custom Padings */
+/* ------------------------------------------------------ */
+
+
+.section-padding {
+    padding: 150px 0;
+}
+
+.section-pt{
+    padding-top: 150px;
+}
+
+.section-pb{
+    padding-bottom: 150px;
+}
+
+/* ------------------------------------------------------ */
+/* Collor Settings */
+/* ------------------------------------------------------ */
+
+.text-highlight{
+    text-decoration: underline;
+    text-decoration-color: var(--colorLightBlue);
+}
+
+
+/* ------------------------------------------------------ */
+/* Animaton Effects */
+/* ------------------------------------------------------ */
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    65% {
+        transform: translate(0, 15px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}

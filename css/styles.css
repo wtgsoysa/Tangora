@@ -1,7 +1,7 @@
 /*! Variables start */
 :root {
   /* Font Styles */
-  --mainfont: "Lato", sans-serif;
+  --mainfont: "Poppins", sans-serif;
 
   /* Color Variables */
   --colorDarkBlue: #0A1540;
@@ -15,6 +15,7 @@ body {
   cursor: default;
   height: 100vh;
   background-color: var(--colorBackground);
+  color: var(--colorDarkBlue);
 }
 
 html {
@@ -52,8 +53,13 @@ body::-webkit-scrollbar {
 }
 
 .navbar {
-  background-color: var(--colorBackground);
+  /* background-color: var(--colorWhite) !important; */
   padding: 0.5rem 0;
+}
+
+.navbg{
+  background-color: var(--colorWhite) !important;
+
 }
 
 /* nav links */
@@ -87,54 +93,234 @@ body::-webkit-scrollbar {
   font-weight: 700 !important;
 }
 
-.aboutUs-Title{
-  color: var(--colorDarkBlue);
-  font-size: 21px;
-  font-weight: 700 !important;
 
+
+
+
+/* ----------------------------------- */
+/* Home Page CSS Start */
+/* ----------------------------------- */
+
+.hero-section{
+  height: 80vh;
 }
 
-.aboutUs-Title1{
+.top-text {
   color: var(--colorDarkBlue);
-  font-size: 18px;
-  font-weight: 600 !important;
-  margin-top: 10px;
-
-}
-
-.aboutUs-Title2{
-  color: var(--colorDarkBlue);
-  font-size: 28px;
-  font-weight: 600 !important;
- 
-
-}
-
-.aboutUs-herotitle{
-  color: var(--colorDarkBlue);
-  font-size: 24px;
-  font-weight: 700 !important;
-
-}
-
-.aboutUs-Descreption{
-  color: var(--colorDarkBlue);
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 500 !important;
-
 }
 
-.aboutUs-Descreption1{
+.main-heading {
   color: var(--colorDarkBlue);
-  font-size: 16px;
-  font-weight: 500 !important;
+  font-size: 57px;
+  font-weight: 600 !important;
+  max-width: 70%;
+}
+
+.custom-bg-outline {
+  background-color: var(--colorWhite);
+  border-radius: 100px;
+  padding: 5px 20px;
+}
+
+.main-heading span {
+  text-decoration: underline;
+  text-decoration-color: var(--colorLightBlue);
+}
+
+.herovid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero-descirption {
+  font-size: 18px !important;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-icon i {
+  font-size: 30px;
+  color: var(--colorDarkBlue);
 
 }
+
+
+
+/* ----------------------------------- */
+/* Why Choose US CSS Start */
+/* ----------------------------------- */
+
+.whyus-section {
+  background-color: var(--colorWhite);
+}
+
+.whyus-title {
+  font-size: 35px;
+  font-weight: 600;
+  max-width: 50%;
+}
+
+.whyus-icon {
+  /* width: 60px !important;
+  height: 60px !important; */
+  font-size: 50px !important;
+  color: var(--colorDarkBlue);
+
+}
+
+
+/* ----------------------------------- */
+/* Cleaning Process CSS Start */
+/* ----------------------------------- */
+
+.process-title {
+  font-size: 35px;
+  font-weight: 600;
+  max-width: 40%;
+}
+
+.process-card {
+  border-radius: 12px !important;
+  background: var(--colorWhite) !important;
+}
+
+.process-card-title {
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.process-card-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.process-card-icon {
+  /* width: 25px;
+  height: 25px; */
+  font-size: 25px;
+  color: var(--colorDarkBlue);
+
+}
+
+/* .process-iconbg {
+  background-color: var(--colorLightBlue);
+  padding: 25px;
+  border-radius: 100px;
+} */
+
+.pro-imoji{
+
+  font-size: 45px !important;
+
+}
+
+
+/* ----------------------------------- */
+/* Services Section CSS Start */
+/* ----------------------------------- */
+
+
+.services-card {
+  background-color: var(--colorWhite);
+  border-radius: 14px;
+}
+
+.services-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+/* ----------------------------------- */
+/* About Section Styles */
+/* ----------------------------------- */
+
+
+.about-bg {
+  background-color: var(--colorWhite);
+  padding: 50px;
+  border-radius: 22px;
+}
+
+.about-image{
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  object-fit: cover;
+
+}
+
+
+
+/* ----------------------------------- */
+/* Responsive Media Query */
+/* ----------------------------------- */
+
+@media (max-width: 991.98px) {
+
+  /* Hero */
+  .top-text {
+    font-size: 12px;
+  }
+
+  .main-heading {
+    font-size: 40px;
+    max-width: 100%;
+
+  }
+
+  .hero-descirption {
+    font-size: 18px;
+    max-width: 90%;
+
+  }
+
+  /* Why Us */
+  .whyus-title {
+    max-width: 100%;
+  }
+
+  /* Cleaning Process */
+  .process-title {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------------- */
 /* Footer */
 /* ----------------------------------- */
+
+.footer-bg{
+  background-color: var(--colorWhite);
+  padding-top: 70px;
+}
+
 .footer-dec {
   color: var(--colorDarkBlue);
   font-family: var(--mainfont);
@@ -165,4 +351,8 @@ body::-webkit-scrollbar {
 
 .contact-sec h3 {
   color: var(--colorDarkBlue);
+}
+
+.footer-dec{
+  max-width: 70%;
 }

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/enq.css">
+    <link rel="stylesheet" href="../css/const.css">
+
 
     <!-- Google Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,59 +35,65 @@
 <body>
 
     <!-- Nav Bar Start -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg mt-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/images/logo.svg" alt="logo" class="nav-logo">
-                </a>
+    <div class="container-fluid navbg py-2 mt-2 sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg mt-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/images/logo.svg" alt="logo" class="nav-logo">
+                    </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4" href="/index.html">Home</a>
-                        </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 px-4" href="../index.html">Home</a>
+                            </li>
 
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4" href="/pages/services.html">Services</a>
-                        </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 px-4"
+                                    href="../pages/servivces.html">Services</a>
+                            </li>
 
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4 active"
-                                href="/pages/enquiries.html">Enquiries</a>
-                        </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 px-4 active"
+                                    href="../pages/enquiries.html">Enquiries</a>
+                            </li>
 
-                        <li class="nav-item mx-3">
-                            <a class="nav-link hbtn hb-fill-middle2 px-4" href="/pages/about-us.html">About Us</a>
-                        </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link hbtn hb-fill-middle2 px-4" href="../pages/about-us.html">About Us</a>
+                            </li>
 
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn custom-btn" type="submit">Contact Us</button>
-                    </form>
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn custom-btn" type="submit">Contact Us</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
+        </div>
     </div>
     <!-- Nav Bar End -->
 
     <!-- Hero Section Start -->
-    <section class="enq-hero mt-150 ">
+    <section class="enq-hero">
         <div class="container">
             <div class="enq-herotext text-center">
-                <p class="enq-miniheading">
-                    Our Cleaning Process
+                <!-- Mini Title -->
+                <p data-aos-delay="100" data-aos="fade-up" data-aos-duration="1500" class="top-text">
+                    <span class="custom-bg-outline">
+                        Reach Out
+                    </span>
                 </p>
-                <h1 class="enq-herotitle">
-                    Cleansing Inquiries <br> Reach Out to Us
+                <h1 data-aos-delay="200" data-aos="fade-up" data-aos-duration="1500" class="enq-herotitle mx-auto mt-3">
+                    Cleansing Inquiries <span class="text-highlight">Reach Out</span> to Us
                 </h1>
             </div>
         </div>
@@ -93,7 +101,7 @@
     <!-- Hero Section Start -->
 
     <!-- Enq Input Sec Start -->
-    <section class="enq-inpu mt-150">
+    <section class="enq-inpu section-padding">
         <div class="container">
             <div class="content">
 
@@ -102,36 +110,38 @@
                         <div class="col-md-12">
                             <div class="form h-100">
                                 <h3 class="enq-inputtitle">Send Us Your Queries</h3>
-                                <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                                <form action="https://api.web3forms.com/submit" class="mb-5" method="post" id="contactForm" name="contactForm">
 
-                                    <div class="row">
+                                    <div class="row my-4">
+
+                                        <input type="hidden" name="access_key" value="65c98262-eba8-4e2b-bdfb-14923b1ddf61">
 
                                         <!-- Name -->
-                                        <div class="col-md-6 form-group mb-3">
+                                        <div data-aos-delay="100" data-aos="fade-up" data-aos-duration="1500" class="col-md-6 form-group mb-3">
                                             <label for="" class="col-form-label">Name *</label>
                                             <input type="text" class="form-control" name="name" id="name"
                                                 placeholder="Your name">
                                         </div>
 
                                         <!-- Email -->
-                                        <div class="col-md-6 form-group mb-3">
+                                        <div data-aos-delay="200" data-aos="fade-up" data-aos-duration="1500" class="col-md-6 form-group mb-3">
                                             <label for="" class="col-form-label">Email *</label>
                                             <input type="email" class="form-control" name="email" id="email"
                                                 placeholder="Your email">
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row my-4">
 
                                         <!-- Number -->
-                                        <div class="col-md-6 form-group mb-3">
+                                        <div data-aos-delay="300" data-aos="fade-up" data-aos-duration="1500" class="col-md-6 form-group mb-3">
                                             <label for="" class="col-form-label">Phone Number *</label>
                                             <input type="number" class="form-control" name="number" id="number"
                                                 placeholder="Your phone number">
                                         </div>
 
                                         <!-- Location -->
-                                        <div class="col-md-6 form-group mb-3">
+                                        <div data-aos-delay="400" data-aos="fade-up" data-aos-duration="1500" class="col-md-6 form-group mb-3">
                                             <label for="" class="col-form-label">Location *</label>
                                             <input type="text" class="form-control" name="location" id="location"
                                                 placeholder="Your location">
@@ -139,16 +149,16 @@
                                     </div>
 
                                     <!-- Time to contact -->
-                                    <div class="row">
+                                    <div data-aos-delay="500" data-aos="fade-up" data-aos-duration="1500" class="row my-4">
                                         <div class="col-md-12 form-group mb-3">
-                                            <label for="" class="col-form-label">Best Tile to Contact You ? *</label>
+                                            <label for="" class="col-form-label">Best Time to Contact You ? *</label>
                                             <input type="text" class="form-control" name="contact-time"
                                                 id="contact-time" placeholder="Best Time to contact">
                                         </div>
                                     </div>
 
                                     <!-- services list -->
-                                    <div class="row">
+                                    <div data-aos-delay="600" data-aos="fade-up" data-aos-duration="1500" class="row my-4">
                                         <div class="col-md-12 form-group mb-3">
                                             <label for="service" class="col-form-label">Service Type *</label>
                                             <br>
@@ -165,27 +175,28 @@
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>
+                                    </div>
 
-                                        <div class="row">
-                                            <div class="col-md-12 form-group mb-3">
-                                                <label for="message" class="col-form-label col-md-12">Message *</label>
-                                                <textarea class="form-control" name="message" id="message" cols="30"
-                                                    rows="5" placeholder="Write your message"></textarea>
-                                            </div>
+                                    <div data-aos-delay="700" data-aos="fade-up" data-aos-duration="1500" class="row my-4">
+                                        <div class="col-md-12 form-group mb-3">
+                                            <label for="message" class="col-form-label col-md-12">Message *</label>
+                                            <textarea class="form-control" name="message" id="message" cols="30"
+                                                rows="5" placeholder="Write your message"></textarea>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-12 form-group">
-                                                <input type="submit" value="Send Message"
-                                                    class="btn custom-btn rounded-0 py-2 px-4">
-                                                <span class="submitting"></span>
-                                            </div>
+                                    </div>
+                                    <div class="row my-4">
+                                        <div class="col-md-12 form-group">
+                                            <input type="submit" value="Send Message"
+                                                class="btn custom-btn rounded-0 py-2 px-4">
+                                            <span class="submitting"></span>
                                         </div>
+                                    </div>
                                 </form>
 
-                                <div id="form-message-warning mt-4"></div>
+                                <!-- <div id="form-message-warning mt-4"></div>
                                 <div id="form-message-success">
                                     Your message was sent, thank you!
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
